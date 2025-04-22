@@ -82,7 +82,6 @@ class vector_class:
         z = v1[0]*v2[1] - v2[0]*v1[1]
         return [x, y, z]
 
-# class for number list
 class number_class:
     """
     class for number list
@@ -111,7 +110,6 @@ class number_class:
             norm.append((b-a)*new + a)
         return norm
 
-# class for counting
 class count_class:
     """
     class for counting
