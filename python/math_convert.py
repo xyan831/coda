@@ -1,7 +1,7 @@
 # number conversion
 # xyan831
 
-class number_convert:
+class base_convert:
     """
     class for number conversion
     num10 = input base 10 number
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     # number conversion example
     num10 = 88
     print(bin(num10), oct(num10), hex(num10))
-    f1 = number_convert(num10)
+    f1 = base_convert(num10)
     print(f1.num2, f1.num8, f1.num16)
     # check reverse conversion
     f1_rev2 = f1.reverse_convert(f1.num2, 2)
