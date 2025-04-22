@@ -19,7 +19,7 @@ Remove-Item "Miniforge3-Windows-x86_64.exe"
 ```
 
 
-##miniforge commands:
+## miniforge commands:
 
 create environment
 ```
@@ -42,7 +42,7 @@ mamba deactivate
 ```
 
 
-##powershell commands:
+## powershell commands:
 
 create environment
 ```
