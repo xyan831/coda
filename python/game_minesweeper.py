@@ -130,8 +130,8 @@ class MineSweeper:
         except ValueError:
             print("invalid input: input integer for (x,y)")
             return "play"
-        if self.board_now.loc[y,x]!=("_" or "#"):
-            print("not unmined place")
+        if self.board_now.loc[y,x]!="_":
+            print("not blank place, if flag need unflag")
             return "play"
         if type=="mine":
             self.board_now.loc[y,x]=self.board_map.loc[y,x]
@@ -142,7 +142,10 @@ class MineSweeper:
                 self.reveal_zero(x, y)
             return self.check_win()
         elif type=="flag":
-            self.board_now.loc[y,x] = "#"
+            if self.board_now.loc[y,x]=="#":
+                self.board_now.loc[y,x] = "_"
+            else:
+                self.board_now.loc[y,x] = "#"
         else:
             print("invalid type: use mine/flag")
         return "play"
