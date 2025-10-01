@@ -37,9 +37,7 @@ def multifile_rename(directory, oldtxt, newtxt):
             newname = filename.replace(oldtxt,newtxt,1)
             #print(filename)
             #print(newname)
-            os.rename(
-                os.path.join(directory, filename),
-                os.path.join(directory, newname))
+            os.rename(os.path.join(directory, filename), os.path.join(directory, newname))
 
 def find_btw(mark, txt):
     """
