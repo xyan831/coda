@@ -9,6 +9,7 @@ def interpolation(xi, x, y):
 if __name__ == "__main__":
     x = [3,5]
     y = [350,480]
-    test1 = interpolation(4,x,y)
-    print(test1)
+    xi = 4
+    yi = interpolation(xi,x,y)
+    print(yi)
 
