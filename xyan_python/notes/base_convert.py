@@ -1,5 +1,5 @@
 # number base conversion
-class base_convert:
+class BaseConvert:
     def __init__(self, num10):
         self.hexd = {'10':'A', '11':'B', '12':'C', '13':'D', '14':'E', '15':'F'}
         # input base 10 number
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # number conversion example
     num10 = 88
     print(bin(num10), oct(num10), hex(num10))
-    f1 = base_convert(num10)
+    f1 = BaseConvert(num10)
     print(f1.num2, f1.num8, f1.num16)
     
     # check reverse conversion
